@@ -1,0 +1,60 @@
+* {
+    /* if you set element width, the content will shrink to include border (box), padding (bubble wrap)*/
+    box-sizing: border-box;
+}
+
+html {
+    /* Xrem (root em) measure based on this*/
+    font-size: 16px;
+}
+
+body {
+    /* removes browser's default margin */
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* linear-gradient overlay */
+    background-image: linear-gradient(
+        115deg,
+        rgba(6, 219, 88, 0.5),
+        rgba(33, 214, 139, 0.5)
+      ),url(https://s3.operamundi.uol.com.br/thumb/171b63c26b80c10a4bc1d79b38e87cea_675c4300bcc24151108fc5dc9f029f65.png);
+    
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+    color: #fff;
+}
+
+header {
+    background-color: rgba(32, 223, 223, 0.86);
+    margin: 0 auto 20px;
+    width: 100%;
+    border-bottom: 5px solid yellow;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.gallery img {
+    width: 350px;
+    height: 300px;
+    margin: .1rem;
+    max-width: 350px;
+    /* crops img if too big */
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.gallery::after {
+    /* add empty item so the last img aligns to the left in a 2 columns view */
+    content: "";
+    width: 350px;
+}
