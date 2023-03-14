@@ -38,10 +38,11 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* aligns child elements along the row axis*/
+    /* aligns child elements along the row axis */
     justify-content: center;
     /* aligns child elements along the column axis */
     align-items: center;
+    /* place-items ;one value for both or two values for each */
     gap: 20px;
 }
 
