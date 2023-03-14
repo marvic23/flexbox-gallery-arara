@@ -38,7 +38,9 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    /* aligns child elements along the row axis*/
     justify-content: center;
+    /* aligns child elements along the column axis */
     align-items: center;
     gap: 20px;
 }
